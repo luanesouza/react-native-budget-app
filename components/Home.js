@@ -13,9 +13,10 @@ const Home = (props) => {
 
   return(
     <View>
-    <Button
-      title="Go to Home"
-      onPress={() => props.navigation.push('NavBar')}/>
+      <NavBar />
+      <Button
+        title="Go to Home"
+        onPress={() => props.navigation.push('NavBar')}/>
     </View>
   )
 }
