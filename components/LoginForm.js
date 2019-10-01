@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import A from 'react-native-a';
+import NavBar from './NavBar';
 
 
 class LoginForm extends React.Component {

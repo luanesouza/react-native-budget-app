@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 class NavBar extends React.Component {
   render(){
+    console.log('props from Navbar', this.props);
     return(
       <View>
         <Text> Test </Text>

@@ -3,6 +3,7 @@ import { View, Text, Button } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Home from './components/Home';
+import NavBar from './components/NavBar';
 
 class App extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class App extends React.Component {
         <Text>App</Text>
         <Button
           title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Home')}/>
+          onPress={() => this.props.navigation.push('Home')}/>
       </View>
     );
   }
@@ -23,6 +24,9 @@ const AppNavigator = createStackNavigator({
   },
   Home: {
     screen: Home
+  },
+  NavBar: {
+    screen: NavBar
   }
 
 });
